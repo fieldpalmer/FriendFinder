@@ -1,5 +1,5 @@
 // load userData from friends.js
-const friends = require("../data/friends");
+const friends = require("../data/friends.js");
 
 // api routes for getting and posting user data
 
