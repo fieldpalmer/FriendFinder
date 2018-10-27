@@ -10,11 +10,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // retrieve routes
-require("./routing/apiRoutes")(app);
-require("./routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 //make the server listen for action 
 app.listen(PORT, () => {
-    console.log('App listening on port' + PORT );
+    console.log('App listening on port http://localhost:' + PORT );
 });
 
